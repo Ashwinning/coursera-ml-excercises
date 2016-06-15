@@ -7,9 +7,11 @@
 We need to calculate `J(θ)`
 
 So the cost function looks like
+
 ![](https://i.gyazo.com/bd98376654f54d768873d0530fe35a16.png)
 
 where the hypothesis is
+
 ![](https://i.gyazo.com/89d473a15cdebc60ca158cb80ca44cab.png)
 
 So the code should look something like :
