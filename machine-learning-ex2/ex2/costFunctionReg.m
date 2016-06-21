@@ -21,8 +21,9 @@ thetaRegularized = theta;
 thetaRegularized(1) = 0;
 
 hypothesis = sigmoid(X * theta);
-J = (1/m)*sum(-y.*log(hypothesis)-(1-y).*log(1-hypothesis)) + (lambda/2*m) * thetaRegularized` * thetaRegularized ;
+J = (1/m)*sum(-y.*log(hypothesis)-(1-y).*log(1-hypothesis)) + (lambda/2*m) * thetaRegularized' * thetaRegularized ;
 
+grad = (1/m)*(X' * (hypothesis - y)) + (lambda / m)*thetaRegularized;
 
 
 % =============================================================
