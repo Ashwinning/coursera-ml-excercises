@@ -11,7 +11,7 @@ g = zeros(size(z));
 
 
 answer = 1./(1+exp(-z)); %AH! The ./ will do an element wise op in a matrix
-return answer;
+g = answer; %WORKS NOW!!
 
 
 % =============================================================
