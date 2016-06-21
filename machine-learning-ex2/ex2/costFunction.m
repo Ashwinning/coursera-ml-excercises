@@ -21,6 +21,9 @@ grad = zeros(size(theta));
 %
 
 
+hypothesis = 1/(1+e^(transpose(theta)*X));
+J = 1/m(-y*log(hypothesis)-(1=y)*log(1-hypothesis));
+
 
 
 
