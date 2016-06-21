@@ -10,7 +10,7 @@ g = zeros(size(z));
 %               vector or scalar).
 
 
-answer = 1/(1+exp(-z)); 
+answer = 1./(1+exp(-z)); %AH! The ./ will do an element wise op in a matrix
 return answer;
 
 
